@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinSight Benchmark</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <h1>FinSight Benchmark</h1>
+    <p class="subtitle">
+      A standalone AI-powered benchmarking tool that evaluates business performance
+      using industry-based financial ratios.
+    </p>
+    <button class="btn-primary" onclick="scrollToDemo()">Try Demo</button>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="info-section">
+    <div class="info-card">
+      <h3>The Problem</h3>
+      <p>
+        Many businesses calculate financial ratios but lack industry context to
+        understand whether their performance is good or bad.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>The Solution</h3>
+      <p>
+        FinSight Benchmark compares company ratios with industry averages and
+        provides explanations and improvement advice.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Industries Covered</h3>
+      <ul>
+        <li>Travel & Tourism Services</li>
+        <li>E-commerce & Online Retail</li>
+        <li>Technology Startups (SaaS)</li>
+        <li>Hospitality (Hotels & Restaurants)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- DEMO SECTION -->
+  <section id="demo" class="demo-section">
+    <h2>Interactive Financial Check</h2>
+
+    <label for="industry">Select Industry</label>
+    <select id="industry">
+      <option value="">-- Choose Industry --</option>
+      <option value="travel">Travel & Tourism</option>
+      <option value="ecommerce">E-commerce</option>
+      <option value="tech">Technology Startups</option>
+      <option value="hospitality">Hospitality</option>
+    </select>
+
+    <label for="ratio">Select Financial Ratio</label>
+    <select id="ratio">
+      <option value="">-- Choose Ratio --</option>
+      <option value="currentRatio">Current Ratio</option>
+      <option value="quickRatio">Quick Ratio</option>
+      <option value="netProfitMargin">Net Profit Margin (%)</option>
+      <option value="roa">Return on Assets (ROA %)</option>
+      <option value="debtToEquity">Debt-to-Equity Ratio</option>
+    </select>
+
+    <label for="value">Enter Your Result</label>
+    <input type="number" id="value" placeholder="e.g. 1.4" />
+
+    <button class="btn-primary" onclick="analyzeData()">Analyze Performance</button>
+
+    <div id="result" class="result-box" style="display: none;"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    Academic demo project • FinSight Benchmark • Diana Abysheva
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
