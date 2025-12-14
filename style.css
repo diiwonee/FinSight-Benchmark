@@ -1,0 +1,128 @@
+:root {
+  --primary: #6a4cff;
+  --primary-dark: #4b35cc;
+  --background: #f6f4ff;
+  --card-bg: #ffffff;
+  --text-dark: #1f1f2e;
+  --text-light: #5c5c7a;
+  --success: #2ecc71;
+  --warning: #f39c12;
+  --danger: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--background), #ffffff);
+  color: var(--text-dark);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  color: var(--text-light);
+}
+
+/* BUTTON */
+.btn-primary {
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+/* INFO SECTION */
+.info-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.info-card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h3 {
+  margin-top: 0;
+  color: var(--primary-dark);
+}
+
+.info-card ul {
+  padding-left: 18px;
+}
+
+/* DEMO */
+.demo-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #efeaff;
+  border-radius: 22px;
+}
+
+.demo-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  font-weight: 600;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* RESULT */
+.result-box {
+  margin-top: 30px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  color: var(--text-light);
+}
